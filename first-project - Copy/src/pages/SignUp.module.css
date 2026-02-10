@@ -1,0 +1,129 @@
+.signUpContainer {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 70%;
+  align-items: center;
+  background-color: #377df5;
+  align-items: stretch;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media (min-width:1400px){
+  .signUpContainer{
+    width: 60%;
+  }
+}
+.signContainer {
+  height: 100vh;
+  background-color: #e1e1e1;
+}
+.signupText {
+  background-color: #377df5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 0px 10px;
+  flex: 2;
+  color: white;
+}
+.signupText p {
+  width: 90%;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.signupText h3{
+  font-size: 24px;
+}
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  min-width: 45%;
+  justify-content: space-evenly;
+  background-color: white;
+  padding: 30px;
+  flex: 1;
+}
+.signupForm label {
+  font-size: 17px;
+}
+.signupForm input {
+  margin-bottom: 10px;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgba(156, 151, 151, 0.197);
+  padding: 20px;
+}
+
+.backlogin {
+  text-align: center;
+  margin-top: 30px;
+  background-color: #2564ec;
+  padding: 15px;
+  width: 300px;
+  border-radius: 50px;
+}
+.signupBtn {
+  padding: 20px;
+  font-size: 14px;
+  background-color: #377df5;
+  border: none;
+  margin-top: 16px;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.signupBtn:hover{
+  background-color: #2a68d3;
+}
+.backlogin a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+}
+.signupForm p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.socialIcons button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.socialIcons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.facebook {
+  background-color: #1877f2;
+}
+
+.google {
+  background-color: #db4437;
+}
+
+.socialIcons svg {
+  font-size: 20px;
+}

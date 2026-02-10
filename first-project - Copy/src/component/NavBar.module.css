@@ -1,0 +1,68 @@
+:root {
+  --main-color: rgb(rgb(207, 206, 206));
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.homeNav {
+  color: white;
+}
+
+.homeNav .navLink {
+  color: white;
+}
+.defaultNav {
+  color: black;
+}
+
+.defaultNav .navLink {
+  color: black;
+}
+.navLink {
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.navLink:hover {
+  color: #ebeb00 ;
+}
+.active {
+  color: #ebeb00  !important;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.navBar ul li {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+}
+.navBar ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.navBar ul li a:hover {
+  color: #ebeb00 ;
+}
+.logoLogin {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ 

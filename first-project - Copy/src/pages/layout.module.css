@@ -1,0 +1,12 @@
+.layout {
+  display: flex;
+  background-color: rgba(230, 230, 230, 0.29);
+  width: 100vw;
+  height: 100vh;
+}
+.fullpage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}

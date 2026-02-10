@@ -1,0 +1,37 @@
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)),
+    url("../assets/HomePageIImage.jpg");
+  background-size: cover;
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+.heroText h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+.heroText {
+  text-align: center;
+  color: white;
+  width: 75%;
+}
+.heroText p{
+    line-height: 1.6;
+}
+.heroText button{
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 15px; 
+    background-color: transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    transition: 0.3s;
+}
+.heroText button:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    box-shadow: 0px 1px 4px white;
+}

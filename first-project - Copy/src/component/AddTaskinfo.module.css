@@ -1,0 +1,76 @@
+.newTask {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  opacity: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  height: 350px;
+  width: 370px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  z-index: 200;
+
+  animation: modalIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes modalIn {
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  opacity: 0;
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .newTask::before {
+    right: 110px;
+  }
+}
+
+.newTask input {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.btnbox {
+  display: flex;
+  justify-content: space-between;
+}
+.btnAddTask {
+  padding: 5px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #5986d4;
+  cursor: pointer;
+}
+.btnCloseTask {
+  padding: 5px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
